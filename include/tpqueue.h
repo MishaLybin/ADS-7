@@ -24,6 +24,7 @@ class TPQueue {
             head = create(value);
         }
     }
+   
    public:
     TPQueue(): head(nullptr) {}
     void push(const T& value) {
