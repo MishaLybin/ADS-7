@@ -64,8 +64,6 @@ class TPQueue {
         return data;
     }
 };
-};
-
 struct SYM {
   char ch;
   int prior;
