@@ -26,8 +26,8 @@ class TPQueue {
     }
 
  public:
- TPQueue(): head(nullptr) {}
- void push(const T& value) {
+  TPQueue(): head(nullptr) {}
+  void push(const T& value) {
       if (!head) {
          addHead(value);
       } else if ((*head).data.prior < value.prior) {
@@ -51,8 +51,8 @@ class TPQueue {
             }
          }
       }
- }
- const T pop() {
+  }
+  const T pop() {
       T data;
       if (!(head->next)) {
          data = head->data;
